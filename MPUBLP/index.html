@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Maa Pateswari University</title>
+
+<!-- Main CSS -->
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<!-- HEADER LOAD -->
+<div id="header"></div>
+
+<!-- ================= PAGE CONTENT ================= -->
+
+
+<section class="course-section">
+    <h2 class="section-title">Select Your Course</h2>
+
+    <div class="course-container">
+        <a href="bsc.html" class="course-card">BSC</a>
+        <a href="bsc ag.html" class="course-card">BSC AG</a>
+        <a href="bca.html" class="course-card">BCA</a>
+        <a href="bba.html" class="course-card">BBA</a>
+        <a href="ba.html" class="course-card">BA</a>
+        <a href="bcom.html" class="course-card">BCOM</a>
+        <a href="msc.html" class="course-card">MSC</a>
+        
+    </div>
+</section>
+
+
+
+
+<!-- FOOTER LOAD -->
+<div id="footer"></div>
+
+
+<!-- Main JS -->
+<script src="script.js"></script>
+
+<!-- Fetch Header & Footer -->
+<script>
+fetch("header.html")
+.then(res => res.text())
+.then(data => {
+    document.getElementById("header").innerHTML = data;
+});
+
+fetch("footer.html")
+.then(res => res.text())
+.then(data => {
+    document.getElementById("footer").innerHTML = data;
+});
+</script>
+
+</body>
+</html>

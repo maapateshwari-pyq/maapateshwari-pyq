@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>MSc Previous Year Question Papers | Maa Pateshwari University</title>
+
+<meta name="description" content="Download MSc previous year question papers of Maa Pateshwari University. Select semester wise MSc PYQ PDF for all subjects and prepare effectively for university examinations.">
+
+<meta name="keywords" content="MSc previous year question papers, Maa Pateshwari University MSc PYQ, MSc semester wise question paper PDF, MSc exam papers MP University">
+
+<meta name="author" content="Maa Pateshwari University PYQ Portal">
+
+<link rel="stylesheet" href="style.css">
+
+<style>
+.course-section{
+    padding:80px 20px;
+    background:linear-gradient(135deg,#fff3e0,#ffe0b2);
+    text-align:center;
+}
+.section-title{
+    font-size:42px;
+    margin-bottom:20px;
+    color:#ff6f00;
+    font-weight:700;
+}
+.section-desc{
+    max-width:900px;
+    margin:0 auto 50px auto;
+    color:#444;
+    line-height:1.6;
+}
+.course-container{
+    max-width:1000px;
+    margin:0 auto;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:30px;
+}
+.course-card{
+    width:160px;
+    background:white;
+    padding:40px 20px;
+    border-radius:15px;
+    font-size:20px;
+    font-weight:600;
+    color:#ff6f00;
+    text-decoration:none;
+    box-shadow:0 8px 20px rgba(0,0,0,0.08);
+    transition:all 0.3s ease;
+}
+.course-card:hover{
+    background:#ff6f00;
+    color:white;
+    transform:translateY(-10px);
+    box-shadow:0 15px 30px rgba(0,0,0,0.15);
+}
+</style>
+
+</head>
+<body>
+
+<div id="header"></div>
+
+<section class="course-section">
+
+<h1 class="section-title">
+Maa Pateshwari University MSc Previous Year Question Papers
+</h1>
+
+<p class="section-desc">
+Select your MSc semester to download previous year question papers of Maa Pateshwari University.
+Semester-wise MSc PYQ PDFs help students understand exam patterns, important topics,
+and improve preparation strategy for university examinations.
+</p>
+
+<div class="course-container">
+    <a href="msc1.html" class="course-card">Semester 1</a>
+    <a href="msc2.html" class="course-card">Semester 2</a>
+    <a href="msc3.html" class="course-card">Semester 3</a>
+    <a href="msc4.html" class="course-card">Semester 4</a>
+</div>
+
+</section>
+
+<div id="footer"></div>
+
+<script src="script.js"></script>
+
+<script>
+fetch("header.html")
+.then(res => res.text())
+.then(data => {
+    document.getElementById("header").innerHTML = data;
+});
+fetch("footer.html")
+.then(res => res.text())
+.then(data => {
+    document.getElementById("footer").innerHTML = data;
+});
+</script>
+
+</body>
+</html>

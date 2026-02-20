@@ -1,0 +1,121 @@
+<header class="top-header">
+    <div class="logo-section">
+        <img src="images.jpg" class="logo">
+        <div>
+            <h1>मां पाटेश्वरी विश्वविद्यालय, बलरामपुर</h1>
+            <h2>Maa Pateswari University, Balrampur</h2>
+            <h3>THIS IS NOT AN OFFICIAL WEBSITE</h3>
+        </div>
+    </div>
+
+    <button class="login-btn" onclick="openPopup()">ADMIN LOGIN</button>
+</header>
+
+<nav class="navbar">
+
+    <!-- Hamburger Button -->
+    <div class="menu-toggle" onclick="toggleMenu(event)">☰</div>
+
+    <ul id="navMenu">
+
+        <li><a href="index.html">HOME</a></li>
+        
+        <li class="gov-dropdown">
+            <a href="#" class="dropdown-toggle">
+                PYQ <span class="arrow"></span>
+            </a>
+            <div class="gov-menu">
+                <a href="ba.html">BA</a>
+                <a href="bsc.html">BSC</a>
+                <a href="bba.html">BBA</a>
+                <a href="bca.html">BCA</a>
+                <a href="bcom.html">BCOM</a>
+                <a href="msc.html">MSC</a>
+            </div>
+        </li>
+
+        <li class="gov-dropdown">
+            <a href="#" class="dropdown-toggle">
+                SYLLABUS <span class="arrow"></span>
+            </a>
+            <div class="gov-menu">
+                <a href="https://mpublp.ac.in/syllabus/faculty-of-arts">Faculty of Arts</a>
+                <a href="https://mpublp.ac.in/syllabus/faculty-of-science">Faculty of Science</a>
+                <a href="https://mpublp.ac.in/syllabus/faculty-of-business-management-and-commerce">Faculty of Business Management and Commerce</a>
+                <a href="https://mpublp.ac.in/syllabus/faculty-of-law">Faculty of Law</a>
+                <a href="https://mpublp.ac.in/syllabus/faculty-of-agriculture">Faculty of Agriculture</a>
+                <a href="https://mpublp.ac.in/syllabus/faculty-of-library-science">Faculty of Library Science</a>
+                <a href="https://mpublp.ac.in/syllabus/faculty-of-education">Faculty of Education</a>
+            </div>
+        </li>
+
+        <li class="gov-dropdown">
+            <a href="#" class="dropdown-toggle">
+                ASSIGNMENT <span class="arrow"></span>
+            </a>
+            <div class="gov-menu">
+                <a href="https://mpublp.ac.in/">ASSIGNMENT</a>
+            </div>
+        </li>
+
+        <li><a href="index.html">PRACTICALS</a></li>
+
+        <li class="gov-dropdown">
+            <a href="#" class="dropdown-toggle">
+                THE UNIVERSITY <span class="arrow"></span>
+            </a>
+            <div class="gov-menu">
+                <a href="https://mpublp.ac.in/page/the-university">UNIVERSITY</a>
+            </div>
+        </li>
+
+        <li class="gov-dropdown">
+            <a href="#" class="dropdown-toggle">
+                NOTICE <span class="arrow"></span>
+            </a>
+            <div class="gov-menu">
+                <a href="https://mpublp.ac.in/general-notification">General Notification</a>
+                <a href="https://mpublp.ac.in/notification-related-to-exams-admission">Notification Related to Exams & Admission</a>
+                <a href="https://mpublp.ac.in/miscellaneous-notification">Miscellaneous Notification</a>
+            </div>
+        </li>
+
+        <li class="gov-dropdown">
+            <a href="#" class="dropdown-toggle">
+                ADMIT CARD <span class="arrow"></span>
+            </a>
+            <div class="gov-menu">
+                <a href="https://mpublp.ac.in/">2025</a>
+                <a href="https://mpublp.ac.in/">2026</a>
+                <a href="https://mpublp.ac.in/">2027</a>
+                <a href="https://mpublp.ac.in/">2028</a>
+            </div>
+        </li>
+
+        <li class="gov-dropdown">
+            <a href="#" class="dropdown-toggle">
+                RESULT <span class="arrow"></span>
+            </a>
+            <div class="gov-menu">
+                <a href="https://mpublp.ac.in/">2025</a>
+                <a href="https://mpublp.ac.in/">2026</a>
+                <a href="https://mpublp.ac.in/">2027</a>
+                <a href="https://mpublp.ac.in/">2028</a>
+            </div>
+        </li>
+
+        <li><a href="index.html">CONTACT</a></li>
+
+    </ul>
+</nav>
+
+<!-- LOGIN POPUP -->
+<div class="popup" id="popup">
+    <div class="popup-box">
+        <span class="close-btn" onclick="closePopup()">&times;</span>
+        <h2>Admin Login</h2>
+        <input type="text" placeholder="Username">
+        <input type="password" placeholder="Password">
+        <button class="submit-btn">Login</button>
+    </div>
+</div>

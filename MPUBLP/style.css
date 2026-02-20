@@ -1,0 +1,391 @@
+/* ================= GLOBAL ================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Segoe UI', sans-serif;
+}
+
+/* ================= HEADER ================= */
+
+.top-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 60px;
+    background:white;
+    flex-wrap:wrap;
+}
+
+.logo-section{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.logo{
+    width:80px;
+}
+
+h1{
+    font-size:26px;
+    color:#b30000;
+}
+
+h2{
+    font-size:16px;
+    color:#ff7a00;
+}
+
+/* LOGIN BUTTON */
+
+.login-btn{
+    padding:12px 30px;
+    border:none;
+    border-radius:30px;
+    background:linear-gradient(to right,#ff416c,#ff4b2b);
+    color:white;
+    font-size:18px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.login-btn:hover{
+    transform:scale(1.05);
+}
+
+/* ================= NAVBAR ================= */
+
+.navbar{
+    background:linear-gradient(to right,#d50000,#ff6f00);
+    padding:0 60px;
+    position:relative;
+}
+
+.navbar ul{
+    list-style:none;
+    display:flex;
+}
+
+.navbar li{
+    position:relative;
+}
+
+.navbar li a{
+    display:block;
+    padding:18px 22px;
+    color:white;
+    text-decoration:none;
+    font-weight:500;
+    transition:0.3s;
+}
+
+.navbar li:hover > a{
+    background:white;
+    color:black;
+}
+
+/* DROPDOWN */
+
+.gov-menu{
+    position:absolute;
+    top:100%;
+    left:0;
+    width:200px;
+    background:#f1583d;
+    opacity:0;
+    visibility:hidden;
+    transform:translateY(15px);
+    transition:0.3s;
+    box-shadow:0 15px 40px rgba(0,0,0,0.2);
+    z-index:999;
+}
+
+.gov-dropdown:hover .gov-menu{
+    opacity:1;
+    visibility:visible;
+    transform:translateY(0);
+}
+
+.gov-menu a{
+    padding:15px;
+    display:block;
+    color:white;
+    border-bottom:1px solid #ff7a00;
+}
+
+.gov-menu a:hover{
+    background:#ff7a00;
+    color:black;
+}
+
+/* ================= COURSE SECTION ================= */
+
+.course-section{
+    padding:60px 20px;
+    background:linear-gradient(135deg,#fff3e0,#ffe0b2);
+    text-align:center;
+}
+
+.section-title{
+    font-size:clamp(28px,6vw,60px);
+    margin-bottom:40px;
+    color:#ff6f00;
+    font-weight:600;
+}
+
+.course-container{
+    max-width:1200px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(140px,1fr));
+    gap:20px;
+}
+
+.course-card{
+    background:white;
+    padding:30px 10px;
+    border-radius:15px;
+    font-size:clamp(18px,4vw,26px);
+    font-weight:600;
+    color:#ff6f00;
+    text-decoration:none;
+    box-shadow:0 8px 20px rgba(0,0,0,0.08);
+    transition:0.3s;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.course-card:hover{
+    background:#ff6f00;
+    color:white;
+    transform:translateY(-6px);
+}
+
+/* ================= POPUP ================= */
+
+.popup{
+    position:fixed;
+    inset:0;
+    display:none;
+    justify-content:center;
+    align-items:center;
+    background:rgba(0,0,0,0.65);
+    backdrop-filter:blur(4px);
+    padding:20px;
+    z-index:9999;
+}
+
+.popup-box{
+    width:100%;
+    max-width:450px;
+    padding:40px;
+    border-radius:20px;
+    background:#2f3a4a;
+    color:white;
+    position:relative;
+}
+
+.popup-box h2{
+    text-align:center;
+    margin-bottom:25px;
+    font-size:24px;
+}
+
+.popup-box input{
+    width:100%;
+    padding:15px;
+    margin-bottom:20px;
+    border-radius:30px;
+    border:none;
+    background:#3b4757;
+    color:white;
+}
+
+.submit-btn{
+    width:100%;
+    padding:15px;
+    border:none;
+    border-radius:30px;
+    background:linear-gradient(to right,#ff416c,#ff4b2b);
+    color:white;
+    font-size:18px;
+    cursor:pointer;
+}
+
+.close-btn{
+    position:absolute;
+    right:20px;
+    top:15px;
+    font-size:28px;
+    cursor:pointer;
+}
+
+/* ================= FOOTER ================= */
+
+.footer{
+    background:#2f2f2f;
+    color:#ddd;
+    padding:40px 5% 20px;
+}
+
+.footer-container{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+}
+
+.footer-box{
+    width:30%;
+    min-width:250px;
+    margin-bottom:20px;
+}
+
+.footer-box h3{
+    color:white;
+    border-bottom:1px solid #555;
+    padding-bottom:8px;
+    margin-bottom:15px;
+}
+
+.footer-box ul{
+    list-style:none;
+}
+
+.footer-box li{
+    margin-bottom:8px;
+}
+
+.footer-box a{
+    color:#ccc;
+    text-decoration:none;
+}
+
+.footer-box a:hover{
+    color:white;
+}
+
+.footer-music{
+    text-align:center;
+    margin-top:20px;
+    padding-top:15px;
+    border-top:1px solid #555;
+}
+
+.footer-music audio{
+    width:250px;
+    border-radius:30px;
+}
+
+.copyright{
+    text-align:center;
+    padding:12px;
+    background:#262626;
+    font-size:14px;
+    color:#bbb;
+}
+
+/* ================= MOBILE RESPONSIVE ================= */
+
+.menu-toggle{
+    display:none;
+    font-size:26px;
+    color:white;
+    cursor:pointer;
+}
+
+@media(max-width:992px){
+
+    .top-header{
+        flex-direction:column;
+        text-align:center;
+        padding:15px 20px;
+        gap:15px;
+    }
+
+    .navbar{
+        padding:0 20px;
+    }
+
+    .navbar ul{
+        flex-direction:column;
+        display:none;
+        background:#d50000;
+        width:100%;
+    }
+
+    .navbar ul.active{
+        display:flex;
+    }
+
+    .navbar li a{
+        padding:15px;
+        border-bottom:1px solid rgba(255,255,255,0.2);
+    }
+
+    .menu-toggle{
+        display:block;
+        padding:15px;
+    }
+
+    .footer-container{
+        flex-direction:column;
+    }
+
+    .footer-box{
+        width:100%;
+    }
+}
+/* MOBILE ACCORDION DROPDOWN */
+
+@media(max-width:992px){
+
+    .gov-menu{
+        position:static;
+        transform:none;
+        opacity:1;
+        visibility:visible;
+        display:none;
+        box-shadow:none;
+        background:#ff6f00;
+    }
+
+    .gov-dropdown.active .gov-menu{
+        display:block;
+    }
+
+    .gov-dropdown > a{
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+    }
+
+}
+/* ===== ULTRA SMOOTH ARROW ===== */
+
+.dropdown-toggle{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.arrow{
+    width:8px;
+    height:8px;
+    border-right:2px solid white;
+    border-bottom:2px solid white;
+    transform:rotate(45deg);
+    transition:all 0.35s cubic-bezier(.68,-0.55,.27,1.55);
+    margin-left:8px;
+}
+
+/* Rotate when active (mobile) */
+.gov-dropdown.active .arrow{
+    transform:rotate(225deg);
+}
+
